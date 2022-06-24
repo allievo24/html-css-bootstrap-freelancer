@@ -1,0 +1,13 @@
+.col-5{
+    border: 2px dotted rgb(202, 18, 18);
+}
+
+#top-page{
+    height: 100vh;
+    background-color: blue;
+}
+
+
+.icone::after{
+ content: "border solid 2px white";
+}
