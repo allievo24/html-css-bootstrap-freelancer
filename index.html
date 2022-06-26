@@ -8,25 +8,35 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
-    <body>
-
+    <body class="debug">
+<!-- mettendo nav-dark classe di bootstrap nel tag nav ci permette di ridefinire il colore di defeult dei suoi elementi
+      altrementi bisognava aggire su ogni elemento della nav con una classe custom -->
         <header>
-           <nav class="d-flex py-3 justify-content-evenly bg-success" >
-            <div class="row">
-              <div class="col-5 fs-3">
-                <a href="#">BOOTSTRAP</a>
+          <nav class="navbar navbar-expand-lg navbar-light Cc_navbar navbar-dark">
+            <div class="container">
+              <a class="navbar-brand" href="#">BOOTSTRAP</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">PORTAFOGLIO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">ABOUT</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">CONTACT</a>
+                  </li>
+                </ul>
+                
+                
               </div>
-            
-              <div class="col-5 text-end text-white-50">
-                <a href="#">POTAFOGLIO</a>
-                <a href="#">ABOUTS</a>
-                <a href="#">CONTATTI</a>
-               
-            
-             </div>
             </div>
-           </nav>
+          </nav>
                 
               
         </header>
@@ -34,35 +44,168 @@
         <main>
             
             <section id="top-page">
-              <div class="container ">
-                   <div class="row d-flex justify-content-center">
-                        <div class="col-6 bg-success text-center ">
-                            <img class="w-50 " src="img/avatar.svg" alt="avarar"/>
-                            <h2>START BOOTSTRAP</h2>
-                            <div class="icone">
-                                <i class="ri-star-line fs-1 text-white"></i>
-                            </div>
-                         </div>
-                     </div>
-                     
+              <div class="container-fluid ">
+                <div class="row text-center">
+                   <div>
+                     <img class="w-25 mb-2 mt-4"  src="img/avatar.svg" alt="avatar-img"/>                                  
                    </div>
+                  <h1 class="text-white">START BOOTSTRAP</h1>
+                  <div class="">
+                    <ul class="d-flex justify-content-center align-items-center">
+                      <li>
+                        <a href="#">GRAPHIC ARTIST</a>
+                        
+                      </li>
+                        <span class="and"></span>
+                      <li>
+                        <a href="#">WEB DESAGNER</a>
+                      </li>
+                      <span class="and"></span>
+                      <li>
+                        <a href="#">ILLUSTRARO</a>
+                      </li>
+                    </ul>
+                  </div>
+                
+                </div>
+
               </div>
 
             </section>
-            <section>
 
-            </section>
-            <section>
 
-            </section>
+
+
+            <section id="portafoglio ">
+              <div class="container-md text-center">
+                <h2> PORTAFOGLIO</h2>
+                <div class="row g-3">
+                  
+                  <div class=" col-12 col-md-6 col-lg-4">
+                    <div class="box_img">
+                    </div>
+
+                  </div>
+                  
+                  <div class=" col-12 col-md-6 col-lg-4">
+                    <div class="box_img">
+                    </div>
+
+                  </div>
+                  
+                  <div class=" col-12 col-md-6 col-lg-4">
+                    <div class="box_img">
+                    </div>
+
+                  </div>
+                  
+                  <div class=" col-12 col-md-6 col-lg-4">
+                    <div class="box_img">
+                    </div>
+
+                  </div>
+                  
+                  <div class=" col-12 col-md-6 col-lg-4">
+                    <div class="box_img">
+                    </div>
+
+                  </div>
+                  
+                  <div class=" col-12 col-md-6 col-lg-4">
+                    <div class="box_img">
+                    </div>
+
+                  </div>
+                
+                </div>
+
+              </div>
+
+            </section >
+                
+              <section id="About">
+
+            
+                <div class="container-md text-center px-5">
+                  
+                  <h3 class="">ABOUT</h3>
+                  
+                  <div class="row row-cols-1 row-cols-md-2 g-3 mx-5">
+                    
+                        <div class="col">
+                          <div class="box_img">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima nisi at minus ipsa cupiditate aut, voluptatem, ullam nesciunt aperiam perspiciatis, cum facere voluptates ipsum alias provident consequatur?
+                          </div>
+                        </div>
+                        
+                        <div class="col">
+                          <div class="box_img">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora mollitia molestiae sit, architecto fuga reiciendis impedit optio nostrum ea repudiandae ducimus saepe consequatur eveniet quis dolorum inventore.
+                          </div>
+                        </div>
+
+                  </div>
+                  <button type="button" class="btn btn-outline-light"> <i class="fa-solid fa-download"></i> Download</button>
+                  
+                </div>
+            
+              </section>
+
+              <section id="contact ">
+                <div class="container-md text-center">
+                  <h3>CONTATTI</h3>
+                  <div class="row">
+                    <div class="col-10 offset-1">
+
+                    </div>
+                  </div>
+
+                </div>
+
+              </section>
             
     
     
     
     
     
-    
-    
+        </main>
+        <footer>
+            <div class="footer-top">
+              <div class="container-md ">
+                <div class="row g-3">
+                  <div class="col-12 col-md-4">
+                    <div class="box_img">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora mollitia molestiae sit, architecto fuga reiciendis impedit optio nostrum ea repudiandae ducimus saepe consequatur eveniet quis dolorum inventore.
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <div class="box_img">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora mollitia molestiae sit, architecto fuga reiciendis impedit optio nostrum ea repudiandae ducimus saepe consequatur eveniet quis dolorum inventore.
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <div class="box_img">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora mollitia molestiae sit, architecto fuga reiciendis impedit optio nostrum ea repudiandae ducimus saepe consequatur eveniet quis dolorum inventore.
+                    </div>
+                  </div>
+                
+                
+                
+                </div>
+
+              </div>
+            </div>
+            <div class="footer-bottom">
+              <div class="container-md text-center">
+                <div>
+                  Copyright your Website 2022 bY MS
+                </div>
+
+              </div>
+
+            </div>
+        </footer>
     
     
     

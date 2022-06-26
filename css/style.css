@@ -1,13 +1,59 @@
-.col-5{
-    border: 2px dotted rgb(202, 18, 18);
+
+.debug #top-page{
+    
+    background-color:var(--section_backround_color);
+    
+}
+.debug .row{
+    border: 3px solid white;
 }
 
-#top-page{
-    height: 100vh;
-    background-color: blue;
+.debug .box_img{
+    background-color:var(--nav_background_color);
+    min-height: 200px;
+    width: 100%;
 }
 
 
-.icone::after{
- content: "border solid 2px white";
+:root{
+    --nav_background_color:#2C3E51 ;
+    --top-page_background_color:#23B9C9 ;
+    --section_backround_color:rgb(26, 188, 156);
+
+}
+
+#About{
+  background-color: var(--section_backround_color);
+
+}  
+
+/* classe custom creata per ridefinire il colore degli elemento burgr
+non piu neccesaria dal momento in cui andiamo ad aggiungere al tag
+ nav la classer nav-dark
+
+.cc_nav_toggler{
+  filter:invert(1)
+}
+*/
+
+
+/*custom class*/
+.Cc_navbar{
+    background-color: var(--nav_background_color);
+}
+
+li{
+ list-style: none;
+
+}
+a{
+ text-decoration: none;
+ color: white;
+}
+.and{
+    height: 2px;
+    width: 15px;
+    background-color: white;
+    display: block;
+    margin: 0 0.5rem;
 }
